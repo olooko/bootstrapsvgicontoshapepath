@@ -25,7 +25,7 @@ namespace SymbolIconControlTest.Controls
                 nameof(Id),
                 typeof(string),
                 typeof(SymbolIconControl),
-                new FrameworkPropertyMetadata(string.Empty));
+                new FrameworkPropertyMetadata(string.Empty, FrameworkPropertyMetadataOptions.BindsTwoWayByDefault));
 
         public string Id
         {
@@ -36,6 +36,11 @@ namespace SymbolIconControlTest.Controls
         public SymbolIconControl()
         {
             InitializeComponent();
+        }
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            this.Style = Application.Current.Resources[this.Id] as Style;
         }
     }
 }
