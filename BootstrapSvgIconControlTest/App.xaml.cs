@@ -4,7 +4,7 @@ using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
 
-namespace SymbolIconControlTest
+namespace BootstrapSvgIconControlTest
 {
     /// <summary>
     /// Interaction logic for App.xaml
