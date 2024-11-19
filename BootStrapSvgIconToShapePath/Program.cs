@@ -8,10 +8,8 @@ namespace BootstrapSvgIconToShapePath
     {
         static void Main(string[] args)
         {
-            //Console.Write("Input file full path for [bootstrap-icons.svg, ver1.11.3] : ");
-            //string? path = Console.ReadLine();
-
-            string filename = @"C:\Users\hskim\Downloads\bootstrap-icons-1.11.3\bootstrap-icons-1.11.3\bootstrap-icons.svg";
+            Console.Write("Input file's full-path for [bootstrap-icons.svg, ver1.11.3] : ");
+            string? filename = Console.ReadLine();
 
             if (filename != null)
             {
