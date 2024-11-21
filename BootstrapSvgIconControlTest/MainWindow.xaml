@@ -17,15 +17,15 @@
                 <TextBlock Text="0-circle-fill" />
             </StackPanel>
             <StackPanel HorizontalAlignment="Left" Margin="4">
-                <controls:BootstrapSvgIconControl Id="0-square" />
+                <controls:BootstrapSvgIconControl Id="0-square" Foreground="Red" />
                 <TextBlock Text="0-square" />
             </StackPanel>
             <StackPanel HorizontalAlignment="Left" Margin="4">
-                <controls:BootstrapSvgIconControl Id="0-square-fill" />
+                <controls:BootstrapSvgIconControl Id="0-square-fill" Foreground="Green" />
                 <TextBlock Text="0-square-fill" />
             </StackPanel>
             <StackPanel HorizontalAlignment="Left" Margin="4">
-                <controls:BootstrapSvgIconControl Id="1-circle" />
+                <controls:BootstrapSvgIconControl Id="1-circle" Foreground="Blue" />
                 <TextBlock Text="1-circle" />
             </StackPanel>
             <StackPanel HorizontalAlignment="Left" Margin="4">
