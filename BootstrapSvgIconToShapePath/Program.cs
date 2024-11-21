@@ -26,10 +26,12 @@ namespace BootstrapSvgIconToShapePath
                             string id = e1.Attribute("id")!.Value;
 
                             writer.WriteLine("<Style x:Key=\"{0}\" TargetType=\"{{x:Type UserControl}}\">", id);
+                            writer.WriteLine("    <Setter Property=\"Width\" Value=\"16\" />");
+                            writer.WriteLine("    <Setter Property=\"Height\" Value=\"16\" />");
                             writer.WriteLine("    <Setter Property=\"Control.Template\">");
                             writer.WriteLine("        <Setter.Value>");
                             writer.WriteLine("            <ControlTemplate>");
-                            writer.WriteLine("                <Canvas Width=\"16\" Height=\"16\" Background=\"{TemplateBinding Background}\">");
+                            writer.WriteLine("                <Canvas Background=\"{TemplateBinding Background}\">");
 
                             e1.Elements().ToList().ForEach(e2 =>
                             {
