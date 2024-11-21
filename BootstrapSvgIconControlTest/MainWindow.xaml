@@ -9,11 +9,11 @@
     <ScrollViewer>
         <WrapPanel>
             <StackPanel HorizontalAlignment="Left" Margin="4">
-                <controls:BootstrapSvgIconControl Id="0-circle" />
+                <controls:BootstrapSvgIconControl Id="0-circle" Scale="1.5" />
                 <TextBlock Text="0-circle" />
             </StackPanel>
             <StackPanel HorizontalAlignment="Left" Margin="4">
-                <controls:BootstrapSvgIconControl Id="0-circle-fill" />
+                <controls:BootstrapSvgIconControl Id="0-circle-fill" Scale="2.0" />
                 <TextBlock Text="0-circle-fill" />
             </StackPanel>
             <StackPanel HorizontalAlignment="Left" Margin="4">

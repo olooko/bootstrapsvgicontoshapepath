@@ -24,10 +24,23 @@ namespace BootstrapSvgIconControlTest.Controls
                 typeof(BootstrapSvgIconControl),
                 new FrameworkPropertyMetadata(string.Empty));
 
+        public static readonly DependencyProperty ScaleProperty =
+            DependencyProperty.Register(
+                nameof(Scale),
+                typeof(double),
+                typeof(BootstrapSvgIconControl),
+                new FrameworkPropertyMetadata(1.0));
+
         public string Id
         {
             get => (string)GetValue(IdProperty);
             set => SetValue(IdProperty, value);
+        }
+
+        public double Scale
+        {
+            get => (double)GetValue(ScaleProperty);
+            set => SetValue(ScaleProperty, value);
         }
 
         public BootstrapSvgIconControl()
@@ -38,6 +51,12 @@ namespace BootstrapSvgIconControlTest.Controls
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
             this.Style = Application.Current.Resources[this.Id] as Style;
+            this.ScaleTransform.ScaleX = this.Scale;
+            this.ScaleTransform.ScaleY = this.Scale;
+            this.ScaleTransform.CenterX = 8.0;
+            this.ScaleTransform.CenterY = 8.0;
+
+            this.Margin = new Thickness(8 * (this.Scale - 1));
         }
     }
 }

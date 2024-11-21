@@ -7,6 +7,6 @@
              d:DesignHeight="100" d:DesignWidth="100"
              Loaded="UserControl_Loaded">
     <UserControl.RenderTransform>
-        <ScaleTransform ScaleX="1.0" ScaleY="1.0" />
+        <ScaleTransform x:Name="ScaleTransform" />
     </UserControl.RenderTransform>
 </UserControl>
